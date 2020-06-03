@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from django.http import httpResponse
+from django.http import HttpResponse
 
 
 # Create your views here.
 # function based vieuw
 
-def home():
-    return('Hello home')
+def home(request):
+    return HttpResponse('Hello home')
