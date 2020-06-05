@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse, FileResponse
+from django.http import HttpResponse, FileResponse, JsonResponse
 
 
 # Create your views here.
@@ -15,3 +15,6 @@ def about(request):
 
 def contact(request):
     return HttpResponse('<p1> hello i''m joury and yazen </p1>')
+
+def what_is_my_ip(request):
+    return JsonResponse({'ip':'123456789'})
