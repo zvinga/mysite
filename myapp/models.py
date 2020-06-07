@@ -9,7 +9,7 @@ class Student(models.Model):
             ('female','female'),
             ('other','other')
     ]
-    name = models.CharField(max_length=40, null=True, blank=True, unique=True, help_text='name please')
+    name = models.CharField(max_length=40, null=True, blank=True, unique=True, help_text='name please',editable=True, error_messages={"unique":"اسم محجوز"})
     age = models.IntegerField(null=True, default='18')
     gendre = models.CharField(null=True, max_length=10, choices=chosse)
 
