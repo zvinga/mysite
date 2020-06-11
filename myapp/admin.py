@@ -3,4 +3,6 @@ from myapp import models
 
 
 # Register your models here.
-admin.site.register(models.Student)
+admin.site.register(models.Email)
+admin.site.register(models.Client)
+
